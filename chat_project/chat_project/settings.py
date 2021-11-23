@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -145,7 +144,5 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 10
 }
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-db_from_env = dj_database_url.config()
-DATABASE['default'].update(db_from_env)
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
