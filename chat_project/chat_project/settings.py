@@ -82,13 +82,13 @@ DATABASES = {
 
         'ENGINE': 'django.db.backends.postgresql',
 
-        'NAME': 'chat_messages_db',
+        'NAME': 'postgres',
 
         'USER': 'postgres',
 
         'PASSWORD': 'postgres',
 
-        'HOST': '127.0.0.1',    # Default LocalHost
+        'HOST': 'db',    # Default LocalHost
 
         'PORT': 5432,   # Default port
 
