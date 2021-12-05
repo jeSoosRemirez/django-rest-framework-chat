@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile.prod
     image: 320046575646.dkr.ecr.us-east-1.amazonaws.com/django-ec2:web
-    command: sh -c "python manage.py migrate && python manage.py collectstatic && gunicorn chat_project.wsgi:application --bind 0.0.0.0:8000"
+    command: sh -c "python manage.py migrate && python manage.py collectstatic --noinput && gunicorn chat_project.wsgi:application --bind 0.0.0.0:8000"
     volumes:
       - static_volume:/app/staticfiles
     expose:
