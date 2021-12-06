@@ -1,3 +1,6 @@
+http://3.87.15.199/messages/
+http://3.87.15.199/
+
 Installations:
 - pip install django
 - pip install djangorestframework
